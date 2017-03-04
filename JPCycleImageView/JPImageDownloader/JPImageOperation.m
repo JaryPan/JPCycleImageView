@@ -41,7 +41,7 @@
     if (self.urlString.length == 0) {
         if (completionHandler) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                NSError *error = [NSError errorWithDomain:@"imageUrlString cannot be nil or its length cannont be zero." code:0 userInfo:nil];
+                NSError *error = [NSError errorWithDomain:@"'imageUrlString' cannot be nil and its length cannont be zero." code:0 userInfo:nil];
                 completionHandler(nil, error, -999, nil);
             });
         }
@@ -85,6 +85,7 @@
         // 下载图片
         [self stopDownloadImage];
         
+        __weak typeof(self) weakSelf = self;
         self.dataTask = [[NSURLSession sharedSession] downloadTaskWithURL:[NSURL URLWithString:self.urlString] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             // 拿到图片
             UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:location]];
@@ -93,7 +94,7 @@
             // 判断是否实现block
             if (completionHandler) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    completionHandler(image, error, JPImageCacheTypeNone, [NSURL URLWithString:self.urlString]);
+                    completionHandler(image, error, JPImageCacheTypeNone, [NSURL URLWithString:weakSelf.urlString]);
                 });
             }
         }];
@@ -105,6 +106,7 @@
 - (void)stopDownloadImage
 {
     [self.dataTask cancel];
+    self.dataTask = nil;
 }
 
 @end

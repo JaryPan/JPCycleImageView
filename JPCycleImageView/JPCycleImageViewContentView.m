@@ -39,8 +39,6 @@ _Pragma("clang diagnostic pop") \
     if (self = [super initWithFrame:frame]) {
         self.clipsToBounds = YES;
         
-        self.placeholderImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-        [self addSubview:self.placeholderImageView];
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         [self addSubview:self.imageView];
         
@@ -91,6 +89,16 @@ _Pragma("clang diagnostic pop") \
 {
     if (_placeholderImage != placeholderImage) {
         _placeholderImage = placeholderImage;
+    }
+    
+    if (!self.placeholderImageView) {
+        self.placeholderImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        [self addSubview:self.placeholderImageView];
+        
+        [self bringSubviewToFront:self.imageView];
+        if (self.aiv) {
+            [self bringSubviewToFront:self.aiv];
+        }
     }
     
     self.placeholderImageView.image = placeholderImage;

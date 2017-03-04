@@ -19,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSLog(@"%@", NSHomeDirectory());
+    
     JPCycleImageView *cycleImageView = [[JPCycleImageView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.width*9/16)];
     cycleImageView.dataSource = @[@"http://pic1a.nipic.com/2008-10-23/20081023151650958_2.jpg",
                                   @"http://img6.faloo.com/Picture/0x0/0/170/170930.jpg",
@@ -33,7 +35,7 @@
 }
 
 #pragma mark - JPCycleImageViewDelegate
-- (void)cycleImageView:(JPCycleImageView *)cycleImageView clickedImage:(UIImage *)image atIndex:(NSInteger)index
+- (void)cycleImageView:(JPCycleImageView *)cycleImageView didClickImage:(UIImage *)image atIndex:(NSInteger)index
 {
     NSLog(@"clickedImageAtIndex:%ld", index);
 }

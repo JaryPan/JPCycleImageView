@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F27F14EC1E6B027900A26A08 /* JPImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F27F14E51E6B027900A26A08 /* JPImageDownloader.m */; };
+		F27F14ED1E6B027900A26A08 /* JPImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F27F14E71E6B027900A26A08 /* JPImageOperation.m */; };
+		F27F14EE1E6B027900A26A08 /* JPImageOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F27F14E91E6B027900A26A08 /* JPImageOperationManager.m */; };
+		F27F14EF1E6B027900A26A08 /* JPImageCaches.m in Sources */ = {isa = PBXBuildFile; fileRef = F27F14EB1E6B027900A26A08 /* JPImageCaches.m */; };
 		F2D6DE061D59B04D00FA2E70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE051D59B04D00FA2E70 /* main.m */; };
 		F2D6DE091D59B04D00FA2E70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE081D59B04D00FA2E70 /* AppDelegate.m */; };
 		F2D6DE0C1D59B04D00FA2E70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE0B1D59B04D00FA2E70 /* ViewController.m */; };
@@ -17,10 +21,6 @@
 		F2D6DE2A1D59B04D00FA2E70 /* JPCycleImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE291D59B04D00FA2E70 /* JPCycleImageViewUITests.m */; };
 		F2D6DE3A1D59B05C00FA2E70 /* JPCycleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE391D59B05C00FA2E70 /* JPCycleImageView.m */; };
 		F2D6DE3D1D59C32100FA2E70 /* JPCycleImageViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE3C1D59C32100FA2E70 /* JPCycleImageViewContentView.m */; };
-		F2D6DE481D59DDD100FA2E70 /* JPImageCaches.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE411D59DDD100FA2E70 /* JPImageCaches.m */; };
-		F2D6DE491D59DDD100FA2E70 /* JPImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE431D59DDD100FA2E70 /* JPImageDownloader.m */; };
-		F2D6DE4A1D59DDD100FA2E70 /* JPImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE451D59DDD100FA2E70 /* JPImageOperation.m */; };
-		F2D6DE4B1D59DDD100FA2E70 /* JPImageOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DE471D59DDD100FA2E70 /* JPImageOperationManager.m */; };
 		F2DFA0BE1D6BF27600C8DC25 /* JPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DFA0BD1D6BF27600C8DC25 /* JPWeakTimer.m */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F27F14E41E6B027900A26A08 /* JPImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageDownloader.h; sourceTree = "<group>"; };
+		F27F14E51E6B027900A26A08 /* JPImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageDownloader.m; sourceTree = "<group>"; };
+		F27F14E61E6B027900A26A08 /* JPImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageOperation.h; sourceTree = "<group>"; };
+		F27F14E71E6B027900A26A08 /* JPImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageOperation.m; sourceTree = "<group>"; };
+		F27F14E81E6B027900A26A08 /* JPImageOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageOperationManager.h; sourceTree = "<group>"; };
+		F27F14E91E6B027900A26A08 /* JPImageOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageOperationManager.m; sourceTree = "<group>"; };
+		F27F14EA1E6B027900A26A08 /* JPImageCaches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageCaches.h; sourceTree = "<group>"; };
+		F27F14EB1E6B027900A26A08 /* JPImageCaches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageCaches.m; sourceTree = "<group>"; };
 		F2D6DE011D59B04D00FA2E70 /* JPCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D6DE051D59B04D00FA2E70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2D6DE071D59B04D00FA2E70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,14 +70,6 @@
 		F2D6DE391D59B05C00FA2E70 /* JPCycleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCycleImageView.m; sourceTree = "<group>"; };
 		F2D6DE3B1D59C32100FA2E70 /* JPCycleImageViewContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCycleImageViewContentView.h; sourceTree = "<group>"; };
 		F2D6DE3C1D59C32100FA2E70 /* JPCycleImageViewContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCycleImageViewContentView.m; sourceTree = "<group>"; };
-		F2D6DE401D59DDD100FA2E70 /* JPImageCaches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageCaches.h; sourceTree = "<group>"; };
-		F2D6DE411D59DDD100FA2E70 /* JPImageCaches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageCaches.m; sourceTree = "<group>"; };
-		F2D6DE421D59DDD100FA2E70 /* JPImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageDownloader.h; sourceTree = "<group>"; };
-		F2D6DE431D59DDD100FA2E70 /* JPImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageDownloader.m; sourceTree = "<group>"; };
-		F2D6DE441D59DDD100FA2E70 /* JPImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageOperation.h; sourceTree = "<group>"; };
-		F2D6DE451D59DDD100FA2E70 /* JPImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageOperation.m; sourceTree = "<group>"; };
-		F2D6DE461D59DDD100FA2E70 /* JPImageOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageOperationManager.h; sourceTree = "<group>"; };
-		F2D6DE471D59DDD100FA2E70 /* JPImageOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageOperationManager.m; sourceTree = "<group>"; };
 		F2DFA0BC1D6BF27600C8DC25 /* JPWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPWeakTimer.h; sourceTree = "<group>"; };
 		F2DFA0BD1D6BF27600C8DC25 /* JPWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPWeakTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,14 +179,14 @@
 		F2D6DE3F1D59DDD100FA2E70 /* JPImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				F2D6DE421D59DDD100FA2E70 /* JPImageDownloader.h */,
-				F2D6DE431D59DDD100FA2E70 /* JPImageDownloader.m */,
-				F2D6DE401D59DDD100FA2E70 /* JPImageCaches.h */,
-				F2D6DE411D59DDD100FA2E70 /* JPImageCaches.m */,
-				F2D6DE441D59DDD100FA2E70 /* JPImageOperation.h */,
-				F2D6DE451D59DDD100FA2E70 /* JPImageOperation.m */,
-				F2D6DE461D59DDD100FA2E70 /* JPImageOperationManager.h */,
-				F2D6DE471D59DDD100FA2E70 /* JPImageOperationManager.m */,
+				F27F14E41E6B027900A26A08 /* JPImageDownloader.h */,
+				F27F14E51E6B027900A26A08 /* JPImageDownloader.m */,
+				F27F14E61E6B027900A26A08 /* JPImageOperation.h */,
+				F27F14E71E6B027900A26A08 /* JPImageOperation.m */,
+				F27F14E81E6B027900A26A08 /* JPImageOperationManager.h */,
+				F27F14E91E6B027900A26A08 /* JPImageOperationManager.m */,
+				F27F14EA1E6B027900A26A08 /* JPImageCaches.h */,
+				F27F14EB1E6B027900A26A08 /* JPImageCaches.m */,
 			);
 			path = JPImageDownloader;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 		F2D6DDF91D59B04D00FA2E70 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = JaryPan;
 				TargetAttributes = {
 					F2D6DE001D59B04D00FA2E70 = {
@@ -321,14 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27F14EF1E6B027900A26A08 /* JPImageCaches.m in Sources */,
 				F2D6DE0C1D59B04D00FA2E70 /* ViewController.m in Sources */,
-				F2D6DE491D59DDD100FA2E70 /* JPImageDownloader.m in Sources */,
-				F2D6DE4B1D59DDD100FA2E70 /* JPImageOperationManager.m in Sources */,
+				F27F14EC1E6B027900A26A08 /* JPImageDownloader.m in Sources */,
+				F27F14EE1E6B027900A26A08 /* JPImageOperationManager.m in Sources */,
 				F2D6DE3A1D59B05C00FA2E70 /* JPCycleImageView.m in Sources */,
-				F2D6DE4A1D59DDD100FA2E70 /* JPImageOperation.m in Sources */,
+				F27F14ED1E6B027900A26A08 /* JPImageOperation.m in Sources */,
 				F2D6DE3D1D59C32100FA2E70 /* JPCycleImageViewContentView.m in Sources */,
 				F2D6DE091D59B04D00FA2E70 /* AppDelegate.m in Sources */,
-				F2D6DE481D59DDD100FA2E70 /* JPImageCaches.m in Sources */,
 				F2D6DE061D59B04D00FA2E70 /* main.m in Sources */,
 				F2DFA0BE1D6BF27600C8DC25 /* JPWeakTimer.m in Sources */,
 			);
@@ -399,8 +399,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -443,8 +445,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

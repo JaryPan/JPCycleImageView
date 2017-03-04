@@ -92,7 +92,7 @@
 /* 
  点击了某张图片 
  */
-- (void)cycleImageView:(JPCycleImageView *)cycleImageView clickedImage:(UIImage *)image atIndex:(NSInteger)index;
+- (void)cycleImageView:(JPCycleImageView *)cycleImageView didClickImage:(UIImage *)image atIndex:(NSInteger)index;
 /*
  从旧下标处滑动到新下标出处
  */

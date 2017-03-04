@@ -164,7 +164,6 @@
     self.contentView3.urlOrImage = self.dataSource[lastIndex];
     [self.contentView1 loadImageWithActivityIndicator:self.showActivityIndicator];
     [self.contentView3 loadImageWithActivityIndicator:self.showActivityIndicator];
-    
 }
 
 
@@ -282,8 +281,8 @@
 }
 - (void)contentViewTapAction:(JPCycleImageViewContentView *)sender
 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(cycleImageView:clickedImage:atIndex:)]) {
-        [self.delegate cycleImageView:self clickedImage:sender.image atIndex:self.index];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cycleImageView:didClickImage:atIndex:)]) {
+        [self.delegate cycleImageView:self didClickImage:sender.image atIndex:self.index];
     }
 }
 
